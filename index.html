@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TackBox — Cajones de montar a caballo</title>
+  <meta name="description" content="TackBox: cajones ecuestres resistentes, minimalistas y personalizables. Fabricados en España.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --yellow:#F8C10B; --black:#000000; --white:#ffffff; --gray:#f4f4f4; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, sans-serif; color:#111; background:#fff; }
+    a { color:var(--black); text-decoration:none; }
+    .container { max-width:1100px; margin:0 auto; padding:0 20px; }
+    header { position:sticky; top:0; background:#fff; border-bottom:1px solid #eee; }
+    .nav { display:flex; align-items:center; justify-content:space-between; height:70px; }
+    .brand img { height:50px; }
+    .menu { display:flex; gap:18px; }
+    .menu a:hover { background:#f7f7f7; border-radius:6px; }
+    .hero { display:grid; grid-template-columns:1.1fr 0.9fr; gap:32px; padding:64px 0; align-items:center; }
+    .hero h1 { font-size:clamp(28px,4vw,48px); margin:0 0 12px; }
+    .hero p { color:#333; margin:0 0 24px; }
+    .btn { display:inline-block; padding:12px 16px; border:2px solid #111; border-radius:12px; font-weight:700; }
+    .btn.primary { background:var(--yellow); border-color:var(--yellow); }
+    .features { background:#111; color:#fff; padding:44px 0; }
+    .features h3 { color:var(--yellow); }
+    .section { padding:56px 0; }
+    .cards { display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
+    .card { border:1px solid #eee; border-radius:14px; background:#fff; overflow:hidden; }
+    .card img { width:100%; object-fit:cover; aspect-ratio:4/3; }
+    .card .body { padding:16px; text-align:left; }
+    .price { font-weight:800; color:#111; }
+    .gallery { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+    .gallery img { width:100%; border-radius:12px; border:1px solid #eee; aspect-ratio:1/1; object-fit:cover; }
+    .cta-strip { background:var(--yellow); padding:26px 0; border-top:6px solid #111; border-bottom:6px solid #111; }
+    footer { padding:34px 0; color:#444; border-top:1px solid #eee; }
+    @media(max-width:900px){ .hero{grid-template-columns:1fr;} .cards{grid-template-columns:1fr;} .gallery{grid-template-columns:repeat(2,1fr);} }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand"><img src="img/logo-tackbox.jpg" alt="TackBox logo"></div>
+    <nav class="menu">
+      <a href="#productos">Productos</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero container" id="inicio">
+    <div>
+      <h1>Cajones de montar a caballo<br>resistentes y funcionales</h1>
+      <p>TackBox combina diseño limpio, materiales robustos y organización inteligente para jinetes que buscan durabilidad y orden.</p>
+      <a class="btn primary" href="https://wa.me/34626443248" target="_blank">Pedir por WhatsApp</a>
+      <a class="btn" href="#productos">Ver productos</a>
+    </div>
+    <div><img src="img/tackbox-1.jpg" alt="TackBox vista frontal"></div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <h3>Fabricado en España · Minimalista</h3>
+    </div>
+  </section>
+  <section class="section container" id="productos">
+    <h2>Productos</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="img/tackbox-2.jpg" alt="Cajón completo">
+        <div class="body">
+          <h3>Cajón completo</h3>
+          <p>Cajón de montar a caballo totalmente equipado, resistente y funcional.</p>
+          <p class="price">300 €</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/tackbox-3.jpg" alt="Servicio reparación">
+        <div class="body">
+          <h3>Servicio de reparación</h3>
+          <p>Zona Valencia y Castellón · Reparaciones de cajones TackBox y mantenimiento general.</p>
+          <p class="price">Precio a consultar</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="section container" id="galeria">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="img/tackbox-1.jpg" alt="TackBox exterior">
+      <img src="img/tackbox-2.jpg" alt="TackBox lateral">
+      <img src="img/tackbox-3.jpg" alt="Puerta con red">
+      <img src="img/tackbox-4.jpg" alt="Interior con estantes">
+    </div>
+  </section>
+  <section class="cta-strip" id="contacto">
+    <div class="container">
+      <strong>¿Listo para tu TackBox?</strong><br>
+      <a class="btn primary" href="https://wa.me/34626443248" target="_blank">Escríbenos por WhatsApp</a>
+      <a class="btn" href="#">Instagram (enlace temporal)</a><br><br>
+      <p>📧 <a href="mailto:tackboxvlc@gmail.com">tackboxvlc@gmail.com</a></p>
+      <p>📍 Valencia, España</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <span>&copy; 2025 TackBox · Fabricado en Valencia, España</span><br>
+    <span>Contacto: <a href="mailto:tackboxvlc@gmail.com">tackboxvlc@gmail.com</a> · <a href="https://wa.me/34626443248" target="_blank">+34 626 443 248</a></span>
+  </div>
+</footer>
+</body>
+</html>
